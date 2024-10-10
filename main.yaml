@@ -1,7 +1,7 @@
-- name: configure {{comp}} server
+- name: configure {{component}} server
   hosts: all
   become: yes
   vars_files:
-    - "variables-{{env}}.yml"
+    - "variables-{{environment}}.yml"
   roles:
-    - "{{comp}}"
+    - "{{component}}"
